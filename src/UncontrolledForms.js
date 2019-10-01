@@ -1,10 +1,12 @@
 import React from "react";
 import "./App.css";
 
-function Forms() {
+function UncontrolledForms() {
   const inputValue = React.createRef();
   function handleChange() {
     console.log(inputValue.current.value);
+    // alert(inputValue.current.value);
+    // this.setState = {(this.inputValue.current.value)};
   }
   return (
     <div>
@@ -13,4 +15,4 @@ function Forms() {
   );
 }
 
-export default Forms;
+export default UncontrolledForms;
